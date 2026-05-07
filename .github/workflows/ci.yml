@@ -6,7 +6,7 @@ jobs:
   build: # name of job
     runs-on: ubuntu-latest # Github Runner (free)
     steps: # steps to run
-      - name : checkout code
+      - name : checkout code application
         uses: actions/checkout@v4 # clone the code into ubuntu runner
       - name : setup docker buildx
         uses: docker/setup-buildx-action@v3
